@@ -15,9 +15,11 @@ const onRequest = (request, response) => {
     case '/page1':
       htmlHandler.getIndex(request, response);
       break;
+      
     case '/page2':
       htmlHandler.getPage2(request, response);
       break;
+
     case '/page3':
       htmlHandler.getPage3(request, response);
       break;
@@ -28,12 +30,14 @@ const onRequest = (request, response) => {
         type: 'video/mp4',
       }, request, response);
       break;
+
     case '/bling.mp3':
       mediaHandler.getFile({
         name: 'bling.mp3',
         type: 'audio/mp3',
       }, request, response);
       break;
+
     case '/bird.mp4':
       mediaHandler.getFile({
         name: 'bird.mp4',
